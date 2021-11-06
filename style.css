@@ -1,0 +1,29 @@
+body{
+display: flex;
+}
+
+.contenedor{
+border: 100px black;
+margin: 0 auto;
+width: 100%;
+background-color: rgb(151, 177, 177);
+padding: 10px;
+}
+
+.principal{
+background-color: rgb(6, 115, 122);
+padding: 10px;
+}
+
+.header{
+display: flex;}
+
+.nombre{
+ margin-left: 40px;
+ width: 100%;
+}
+
+.titulo{
+    border: 1px cyan;
+}
+
