@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
-   integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
-   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>Document</title>
 </head>
+
 <body>
    <div class="container">
       <div class="left_Side">
          <div class="profileText">
             <div class="imgBx">
-             <img src="imagenes/PFJC.jpeg" alt="">
+               <img src="imagenes/PFJC.jpeg" alt="">
             </div>
+            
+
+            <script>
+               function myFunction() {
+                  var element = document.body;
+                  element.classList.toggle("dark-mode");
+                  var element2 = document.getElementById("side");
+                  element2.classList.toggle("dark")
+               }
+               </script>
             <h2>Maryluna Tovio Medrano<br><span>Estudiante</span></h2>
          </div>
          <div class="contactInfo">
@@ -27,16 +39,24 @@
                   <span class="text">+57 3014654737</span>
                </li>
                <li>
-                  <span class="icon" ><i class="fa fa-envelope-square" aria-hidden="true"></i></span>
-                  <span class="text"></a> marylunatoviomedrano@gmail.com </span>
+                  <a href="mailto:marylunatoviomedrano@gmail.com" target="_blank" class="link email">
+                     <span class="icon"><i class="fa fa-envelope-square" aria-hidden="true"></i></span>
+                     <span class="text">marylunatoviomedrano@gmail.com</span>
+                  </a>
                </li>
                <li>
-                  <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                  <span class="text"></a> thisismoon01</span>
+                  <a href="https://www.instagram.com/thisismoon01/" target="_blank" class="link">
+                     <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                     <span class="text">thisismoon01</span>
+                  </a>
                </li>
                <li>
-                  <span class="icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
-                  <span class="text">Maryluna Tovio</span>
+                  <a href="https://www.facebook.com/maryluna.toviomedrano.5/" target="_blank" class="link">
+                     <span class="icon">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                     </span>
+                     <span class="text">Maryluna Tovio</span>
+                  </a>
                </li>
                <li>
                   <span class="icon"><i class="fa fa-map" aria-hidden="true"></i></span>
@@ -83,105 +103,122 @@
                   <span class="percent">
                      <div style="width: 30%"></div>
                   </span>
-                  
+
                </li>
                <li>
                   <span class="text">Coreano</span>
                   <span class="percent">
-                  <div style="width: 10%"></div>
-               </span>
-                  
+                     <div style="width: 10%"></div>
+                  </span>
+
                </li>
             </ul>
          </div>
       </div>
-      <div class="right_Side">
-      <div class="about">
-         <h2 class="title2">Sobre Mi</h2>
-         <p>Soy una persona que sabe que es lo que quiere y lucha por ello, a pesar de todas las adversidades que se le crucen en el camino, aveces puede dudar de si misma por sus inseguridades pero le encanta seguir aprendiendo cada dia mas. Este año ha sido el peor de su vida ya que ha tenido que tropezar muchas veces con piedras en el camino para poder cumplir todos sus sueños, su futuro, pero sigue intentanto llegar mas aya  de lo que el viento la puede guiar.<br><br></p>
-      </div>
-      <div class="about">
-         <h2 class="title2">Actividades Extracurriculares</h2>
-         <div class="box">
-         <div class="year"></div>
-         <h5>2018 - 2021</h5>
-         <h5>Nombre</h5>
-         <div class="text">
-            <h4>ProyectArte</h4>
-            <p>Arte</p>
-   
+      <label class="switch" >
+         <input type="checkbox" onclick="myFunction()">
+         <span class="slider round"></span>
+       </label>
+      <div class="right_Side" id="side">
+         <div class="about">
+            <h2 class="title2">Sobre Mi</h2>
+            <p>Soy una persona que sabe que es lo que quiere y lucha por ello, a pesar de todas las adversidades que se
+               le crucen en el camino, aveces puede dudar de si misma por sus inseguridades pero le encanta seguir
+               aprendiendo cada dia mas. Este año ha sido el peor de su vida ya que ha tenido que tropezar muchas veces
+               con piedras en el camino para poder cumplir todos sus sueños, su futuro, pero sigue intentanto llegar mas
+               aya de lo que el viento la puede guiar.<br><br></p>
          </div>
+         <div>
+            
          </div>
-         <div class="box">
-            <div class="year"></div>
-            <h5>2021 - Presente</h5>
-            <h5>Nombre</h5>
-            <div class="text">
-               <h4>Escuelita Viajera - Taller LectoEscritor</h4>
-               <p>Escribir</p>
-               
-            </div>
+         <div class="about">
+            <h2 class="title2">Actividades Extracurriculares</h2>
+            <div class="box">
+               <h5>2018 - Presente</h5>
+               <h5>Nombre</h5>
+               <div class="text left"> 
+                  <h4>Fundación - ProyectArte </h4>
+                  <p>Arte</p>
+
+               </div>
             </div>
             <div class="box">
-               <div class="year"></div>
+               <h5>2021 - Presente</h5>
+               <h5>Nombre</h5>
+               <div class="text">
+                  <h4>Escuelita Viajera - Taller LectoEscritor</h4>
+                  <p>Escribir</p>
+
+               </div>
+            </div>
+            <div class="box">
                <h5>2021 - Presente</h5>
                <h5>Nombre</h5>
                <div class="text">
                   <h4>CMJ - Consejo Municipal De juventud</h4>
                   <p>Politica</p>
-                  
-               </div>
-               </div>
-            <div class="box">
-            <div class="year"></div>
-            <h5>2021 - Presente</h5>
-            <h5>Nombre</h5>
-            <div class="text">
-               <h4>Jovenes Creativos</h4>
-               <p>Desarrollo De Software</p>
-            </div>
-            </div>
-      </div>
-      <div class="about skills">
-      <h2 class="title2">Habilidades</h2>
-      <div class="box">
-         <h4>Ecritura Creativa</h4>
-         <div class="percent">
-         <div style="width:90%"></div>
-      </div>
-      </div>
-      <div class="box">
-         <h4>Bailar</h4>
-         <div class="percent">
-        <div style="width:60%"></div>
-      </div>
-      </div>
-      <div class="box">
-         <h4>Dibujar</h4>
-         <div class="percent">
-         <div style="width:90%"></div>
-      </div>
-      </div>
-      <div class="box">
-         <h4>Pensamiento Creativo</h4>
-         <div class="percent">
-         <div style="width:80%"></div>
-      </div>
-      </div>
-   </div>
-   <div class="hobbies">
-   <h2 class="title2">Pasa Tiempos</h2>
-   <ul>
-      <li><i class="fa fa-book" aria-hidden="true"></i> Leer</li>
-      <li><i class="fa fa-television" aria-hidden="true"></i> Series/Peliculas</li>
-      <li><i class="fa fa-headphones" aria-hidden="true"></i> Musica</li>
-      <li><i class="fa fa-language" aria-hidden="true"></i> Idiomas </li>
-   </ul>
-   </div>
 
-</div>
-</div>
+               </div>
+            </div>
+            <div class="box">
+               <h5>2021 - Presente</h5>
+               <h5>Nombre</h5>
+               <div class="text">
+                  <h4>Jovenes Creativos</h4>
+                  <p>Desarrollo De Software</p>
+               </div>
+            </div>
+         </div>
+         <div class="about skills">
+            <h2 class="title2">Habilidades</h2>
+            <ul>
+               <li><div class="box">
+                  <h4>Ecritura Creativa</h4>
+                  <span class="percent">
+                     <div style="width: 90%"></div>
+                  </span>
+               </div></li>
+               <li><div class="box">
+                  <h4>Bailar</h4>
+                  <span class="percent">
+                     <div style="width: 90%"></div>
+                  </span>
+               </div></li>
+               <li><div class="box">
+                  <h4>Dibujar</h4>
+                  <span class="percent">
+                     <div style="width: 90%"></div>
+                  </span>
+               </div></li>
+               <li>
+                  <div class="box">
+                     <h4>Pensamiento Creativo</h4>
+                     <span class="percent">
+                        <div style="width: 90%"></div>
+                     </span>
+                  </div>
+
+               </li>
+             </ul>
+            
+            
+            
+            
+         </div>
+         <div class="hobbies">
+            <h2 class="title2">Pasa Tiempos</h2>
+            <ul>
+               <li><i class="fa fa-book" aria-hidden="true"></i> Leer</li>
+               <li><i class="fa fa-television" aria-hidden="true"></i> Series/Peliculas</li>
+               <li><i class="fa fa-headphones" aria-hidden="true"></i> Musica</li>
+               <li><i class="fa fa-language" aria-hidden="true"></i> Idiomas </li>
+            </ul>
+         </div>
+
+      </div>
+   </div>
 
 
 </body>
+
 </html>
